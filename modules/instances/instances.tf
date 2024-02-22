@@ -35,9 +35,9 @@ resource "google_compute_instance" "your-instance-resource-name2" {
     EOT
   allow_stopping_for_update = true
 }
-resource "google_compute_instance" your-instance-resource-name3" {
-  name         = "name of instance3"
-  machine_type = "es-standard-2"
+resource "google_compute_instance" tf-instance-646864" {
+  name         = "tf-instance-646864"
+  machine_type = "e2-standard-2"
 
   boot_disk {
     initialize_params {
@@ -46,7 +46,8 @@ resource "google_compute_instance" your-instance-resource-name3" {
   }
 
   network_interface {
-    network = "default"
+    network = "vpc-name"
+    subnetwork : "subnet-01"
   }
   
   allow_stopping_for_update = true

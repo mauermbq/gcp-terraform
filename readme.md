@@ -1,4 +1,4 @@
-# terraform on GCP
+# Terraform on GCP
 
 This is a simple basline Repo in order to start to manage components. It shows how to set-up a simple environment that contains a storage module an compute instance module and simple vpc resource covering the following base techniques.
 
@@ -54,11 +54,10 @@ Inorder to bring existing resources under Terraform management, Terraform has an
 
 [Official Documentation](https://developer.hashicorp.com/terraform/cli/commands/import#example-import-into-module)
 
-IExamples: 
+Examples: 
 `terraform import docker_container.web $(docker inspect -f {{.ID}} hashicorp-learn)`
 
-`terraform import module.instances.google_compute_instance.<instance name> <project>/<zone>/<instance name>>`
-
+`terraform import module.instances.google_compute_instance.<instance name> <project>/<zone>/<instance name>`
 
 ## Configuration
 
